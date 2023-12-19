@@ -21,7 +21,7 @@ jobs:
         run: npx playwright install --with-deps
 
       - name: Run Playwright tests
-        run: BROWSER='chrome:headless:false' npm run cucumber-test
+        run: BROWSER='chrome:headless:false'  npx cucumber-js test
 
       - uses: actions/upload-artifact@v3
         if: always()
